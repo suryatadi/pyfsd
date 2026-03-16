@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mohan Ravuri Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+/* BACKGROUND */
+
+body{
+background:linear-gradient(135deg,#0b1c2c,#081520);
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#081520;
+position:sticky;
+top:0;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+nav a:hover{
+color:#ff6a4a;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:100px 100px;
+min-height:100vh;
+}
+
+.hero-text{
+width:60%;
+}
+
+.hero-text h1{
+font-size:85px;
+margin:15px 0;
+}
+
+/* TYPING EFFECT */
+
+.typing{
+border-right:3px solid #ff6a4a;
+white-space:nowrap;
+overflow:hidden;
+width:0;
+animation:typing 3s steps(20,end) forwards,
+blink 0.7s infinite;
+}
+
+@keyframes typing{
+from{width:0}
+to{width:300px}
+}
+
+@keyframes blink{
+50%{border-color:transparent}
+}
+
+.hero-text h2{
+font-size:45px;
+color:#ff6a4a;
+}
+
+.hero-text p{
+font-size:28px;
+line-height:1.6;
+}
+
+/* HERO IMAGE */
+
+.hero-img img{
+width:420px;
+border-radius:12px;
+margin-left:-50px;
+transition:0.4s;
+}
+
+.hero-img img:hover{
+transform:translateX(-15px) scale(1.06);
+box-shadow:0px 20px 45px rgba(255,106,74,0.7);
+}
+
+/* ABOUT */
+
+.about{
+padding:120px 100px;
+background:#081520;
+}
+
+.about-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:80px;
+}
+
+/* ABOUT IMAGE */
+
+/* ABOUT IMAGE */
+
+.about-img img{
+width:340px;
+border-radius:12px;
+transition:0.5s;
+box-shadow:0 15px 35px rgba(0,0,0,0.6);
+}
+
+/* DIFFERENT HOVER */
+
+.about-img img:hover{
+transform:scale(1.08) rotate(3deg);
+box-shadow:0 25px 55px rgba(255,106,74,0.7);
+}
+
+/* ABOUT TEXT */
+
+.about-text{
+max-width:800px;
+}
+
+.about-text h1{
+font-size:48px;
+margin-bottom:25px;
+}
+
+.about-text p{
+font-size:28px;
+line-height:1.9;
+}
+
+/* SKILLS */
+
+.skills{
+padding:120px 100px;
+}
+
+.skills h1{
+font-size:42px;
+margin-bottom:40px;
+}
+
+.skill{
+margin:30px 0;
+}
+
+.bar{
+width:100%;
+background:#1b344d;
+border-radius:5px;
+overflow:hidden;
+}
+
+.progress{
+height:20px;
+background:#ff6a4a;
+width:0;
+animation:load 2s forwards;
+}
+
+@keyframes load{
+from{width:0}
+}
+
+.html{animation-delay:0.2s;width:90%;}
+.css{animation-delay:0.4s;width:80%;}
+.js{animation-delay:0.6s;width:70%;}
+.python{animation-delay:0.8s;width:85%;}
+
+/* PROJECTS */
+
+.projects{
+padding:120px 100px;
+background:#081520;
+text-align:center;
+}
+
+.projects h1{
+font-size:42px;
+margin-bottom:60px;
+}
+
+.project-container{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.project-card{
+background:#0f2436;
+padding:30px;
+width:260px;
+border-radius:10px;
+transition:0.4s;
+}
+
+.project-card:hover{
+transform:translateY(-12px);
+box-shadow:0 18px 40px rgba(0,0,0,0.6);
+}
+
+.project-card h3{
+margin-bottom:15px;
+color:#ff6a4a;
+}
+
+.project-card p{
+font-size:18px;
+line-height:1.6;
+}
+
+/* CONTACT */
+
+.contact{
+padding:120px 100px;
+text-align:center;
+}
+
+.contact h1{
+font-size:42px;
+margin-bottom:30px;
+}
+
+.contact p{
+font-size:24px;
+margin:10px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<h2>  𝙼𝚘𝚑𝚊𝚗 𝚁𝚊𝚟𝚞𝚛𝚒</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h2>Hello.</h2>
+
+<h1 class="text">𝙄'𝙢 𝙈𝙤𝙝𝙖𝙣 𝙍𝙖𝙫𝙪𝙧𝙞</h1>
+
+<h2>Web Developer</h2>
+
+<p>
+I am learning Python, HTML, CSS and JavaScript.
+I enjoy building websites and improving my coding skills.
+</p>
+
+</div>
+
+<div class="hero-img">
+<img src="mohan1.jpeg">
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+<div class="about-container">
+
+<div class="about-img">
+<img src="MOHAN.jpeg">
+</div>
+
+<div class="about-text">
+
+<h1>𝘼𝙗𝙤𝙪𝙩 𝙈𝙚</h1>
+
+<p style="margin-right: 10vh;">
+𝙷𝚎𝚕𝚕𝚘, 𝙸 𝚊𝚖 𝙼𝚘𝚑𝚊𝚗 𝚁𝚊𝚟𝚞𝚛𝚒. 𝙸 𝚊𝚖 𝚌𝚞𝚛𝚛𝚎𝚗𝚝𝚕𝚢 𝚕𝚎𝚊𝚛𝚗𝚒𝚗𝚐 𝚆𝚎𝚋 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚖𝚎𝚗𝚝 𝚊𝚗𝚍 𝙿𝚢𝚝𝚑𝚘𝚗 𝚙𝚛𝚘𝚐𝚛𝚊𝚖𝚖𝚒𝚗𝚐. 𝙸 𝚎𝚗𝚓𝚘𝚢 𝚋𝚞𝚒𝚕𝚍𝚒𝚗𝚐 𝚠𝚎𝚋𝚜𝚒𝚝𝚎𝚜 𝚊𝚗𝚍 𝚒𝚖𝚙𝚛𝚘𝚟𝚒𝚗𝚐 𝚖𝚢 𝚌𝚘𝚍𝚒𝚗𝚐 𝚜𝚔𝚒𝚕𝚕𝚜 𝚎𝚟𝚎𝚛𝚢 𝚍𝚊𝚢. 𝙼𝚢 𝚐𝚘𝚊𝚕 𝚒𝚜 𝚝𝚘 𝚋𝚎𝚌𝚘𝚖𝚎 𝚊 𝚙𝚛𝚘𝚏𝚎𝚜𝚜𝚒𝚘𝚗𝚊𝚕 𝚜𝚘𝚏𝚝𝚠𝚊𝚛𝚎 𝚍𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section class="skills" id="skills">
+
+<h1>My Skills</h1>
+
+<div class="skill">
+<p>HTML</p>
+<div class="bar"><div class="progress html"></div></div>
+</div>
+
+<div class="skill">
+<p>CSS</p>
+<div class="bar"><div class="progress css"></div></div>
+</div>
+
+<div class="skill">
+<p>JavaScript</p>
+<div class="bar"><div class="progress js"></div></div>
+</div>
+
+<div class="skill">
+<p>Python</p>
+<div class="bar"><div class="progress python"></div></div>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section class="projects" id="projects">
+
+<h1>My Projects</h1>
+
+<div class="project-container">
+
+<div class="project-card">
+<h3>Portfolio Website</h3>
+<p>A personal portfolio website built using HTML and CSS.</p>
+</div>
+
+<div class="project-card">
+<h3></h3>
+<p></p>
+</div>
+
+<div class="project-card">
+<h3></h3>
+<p></p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h1>Contact</h1>
+
+<p><b>Name:</b> Mohan Ravuri</p>
+<p><b>Phone:</b> 9216724456</p>
+
+</section>
+
+</body>
+</html>

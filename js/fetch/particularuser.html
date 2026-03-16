@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            background-color: black;
+            color: aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #main{
+            margin: 20px;
+            background:darkblue;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        form{
+            padding: 10px;
+        }
+        button{
+            padding: 10px;
+        } */
+                     body {
+            background-color: brown;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #main {
+            margin: 20px;
+            background: black;
+            padding: 20px;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+        }
+
+        form {
+            padding: 25px;
+        }   
+     
+    </style>
+</head>
+<body>
+    <!-- <div id="main">
+        <form onsubmit="handlesubmit()">
+            <input type="number" id="userInput">
+            <button onclick="handlesubmit">search</button>
+        </form>
+
+    </div>
+    <div id="output"></div>
+    <script>
+        const handlesubmit=async()=>{
+            e.preventDefault()
+            const userInput=document.getElementById("userInput").value;
+            console.log(userInput)
+        } -->
+    <!-- </script> -->
+
+
+    <div id="main">
+        <form id="maincontainer">
+            <input type="number" id="userinput" value="1" min="1" max="10" />
+            <button onclick="handleclick(event)">search</button>
+        </form>
+    </div>
+    <div id="output"></div>
+
+    <script>
+        const fetchData = async (useridinput) => {
+            const output = document.getElementById("output")
+            const data = await fetch(`https://jsonplaceholder.typicode.com/users/${useridinput}`);
+            const response = await data.json();
+            console.log(response)
+            output.innerHTML = `
+            ${response.name}
+            `
+        }
+        const handleclick=(e)=>{
+            e.preventDefault()
+            const useridinput=document.getElementById("userinput").value;
+            fetchData(useridinput)
+        }
+
+    </script>
+
+
+
+</body>
+</html>
